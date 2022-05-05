@@ -374,6 +374,25 @@ define(function() {
        *
        * @type {pentaho.config.spec.IRule}
        */
+// START DEBUG New
+
+// heatGrid model
+    {
+      priority: 10,
+      select: {
+        module: "pentaho/visual/models/HeatGrid"
+      },
+      apply: {
+        props: {
+          colorSet: {
+            defaultValue: "ryg"
+          }
+        }
+      }
+    },
+
+// END DEBUG
+
       {
         select: {
           application: "pentaho/analyzer",
